@@ -1,0 +1,33 @@
+@import url("./index.css");
+
+.bouton {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.card-body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.card-footer {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  margin-top: 1rem;
+}
