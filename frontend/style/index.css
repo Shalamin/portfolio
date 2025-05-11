@@ -32,3 +32,77 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
 }
+
+header {
+  background-color: var(--popover);
+  background-image: linear-gradient(
+    -45deg,
+
+    /* Diagonal */ /* Gestions des diagonales du bas gauche */
+      rgba(242, 76, 76, 1),
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 10px,
+    transparent 20px,
+    rgba(242, 76, 76, 1) 20px,
+    rgba(255, 255, 255, 0.05) 21px,
+    transparent 30px,
+    transparent 700px,
+
+    rgba(242, 76, 76, 1) 700px /* Diagonales du haut gauche  */,
+    rgba(255, 255, 255, 0.05) 701px,
+    transparent 710px,
+    transparent 720px,
+    rgba(242, 76, 76, 1) 720px,
+    rgba(255, 255, 255, 0.05) 721px,
+    transparent 710px,
+    transparent 720px
+  );
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  margin-bottom: 30px;
+}
+header li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 1rem;
+}
+header a {
+  text-decoration: none;
+  color: var(--foreground);
+  font-weight: bold;
+}
+header li > a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+main section {
+  display: flex;
+  flex-direction: row;
+}
+
+main aside {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: flex-end;
+}
+main aside button {
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+}
+main aside img {
+  border-radius: var(--radius);
+}
