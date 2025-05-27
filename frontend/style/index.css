@@ -5,17 +5,23 @@ body {
   color: var(--foreground);
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
+  margin: 0;
 }
 
-header {
+header,
+footer {
   background-color: var(--popover);
   background-image: var(--diagonal);
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   position: sticky;
   margin-bottom: 30px;
+}
+footer {
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 header li {
   list-style: none;
@@ -52,11 +58,167 @@ main aside {
   row-gap: 1rem;
   align-items: flex-end;
 }
-main aside button {
-  cursor: pointer;
+main aside a {
   width: 50%;
   height: 50%;
 }
+main aside a button {
+  cursor: pointer;
+}
 main aside img {
   border-radius: var(--radius);
+}
+
+.comp-container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  display: grid;
+
+  gap: 1rem;
+}
+.proj-container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: relative;
+  display: grid;
+
+  gap: 1rem;
+}
+
+.comp-list {
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  border: 1px solid;
+  border-radius: var(--radius);
+  min-height: 7rem;
+  text-decoration: none;
+  color: var(--foreground);
+}
+.comp-list:hover,
+.card-picture:hover {
+  background-color: var(--muted);
+  box-shadow: 2px 2px 1.5px rgba(0, 0, 0, 0.7);
+  scale: 1.05;
+  transition: all 0.2s ease-in-out;
+}
+.comp-container > a:nth-child(1) .comp-list:hover {
+  border: 1px solid var(--comp1);
+}
+.comp-container > a:nth-child(2) .comp-list:hover {
+  border: 1px solid var(--comp2);
+}
+.comp-container > a:nth-child(3) .comp-list:hover {
+  border: 1px solid var(--comp3);
+}
+.comp-container > a:nth-child(4) .comp-list:hover {
+  border: 1px solid var(--comp4);
+}
+.comp-container > a:nth-child(5) .comp-list:hover {
+  border: 1px solid var(--comp5);
+}
+.comp-container > a:nth-child(6) .comp-list:hover {
+  border: 1px solid var(--comp6);
+}
+
+.comp-list svg,
+.card-link svg {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.comp-list svg:hover,
+.card-link svg:hover {
+  scale: 1.5;
+  transition: all 0.2s ease-in-out;
+}
+.comp-list a,
+.card-link a,
+.contact a > svg {
+  text-decoration: none;
+  color: var(--destructive);
+}
+.proj-container a,
+.comp-container a {
+  text-decoration: none;
+}
+
+.contact-grid {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  grid-template-rows: 3fr;
+}
+
+.ft-credit,
+.ft-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  max-width: 80%;
+  width: auto;
+  line-height: 1.5;
+}
+.ft-credit-title {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+.ft-credit-title::first-letter {
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.ft-credit-body,
+.ft-contact-body {
+  font-size: 0.5rem;
+  line-height: 2.5;
+  color: var(--muted-foreground);
+}
+.ft-contact-body img {
+  max-width: 16px;
+  width: auto;
+  max-height: 16px;
+  height: auto;
+}
+.ft-contact-link {
+  display: flex;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+.card-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.card-body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.card-footer {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  margin-top: 1rem;
+  text-align: right;
+  font-style: italic;
+  position: relative;
+  bottom: 10px;
+  right: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+.container > div:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }

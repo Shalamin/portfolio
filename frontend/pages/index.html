@@ -12,150 +12,491 @@
   </head>
   <body>
     <header>
+      <li><a href="index.html"> JKERAUDREN </a></li>
       <nav>
-      <ul>
-        <li><a href="projet.html">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="aboutme.html">À propos</a></li>
-      </ul>
+        <ul>
+          <li><a href="projet.html">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="aboutme.html">À propos</a></li>
+        </ul>
       </nav>
-      <a href="../documents/CV_KERAUDREN_JOHAN_V2.pdf" download>
-      <button class="bouton">
-      
-        Télécharger CV
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 17V3"/>
-          <path d="m6 11 6 6 6-6"/>
-          <path d="M19 21H5"/>
-        </svg>
-      
-      </button>
+      <a href="../documents/CV_KERAUDREN_JOHAN.pdf" download>
+        <button class="bouton">
+          Télécharger CV
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 24 20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 17V3" />
+            <path d="m6 11 6 6 6-6" />
+            <path d="M19 21H5" />
+          </svg>
+        </button>
       </a>
     </header>
     <main>
       <section class="card">
         <article>
-        <div class="card-title">
-          <h1>Keraudren Johan</h1>
-        </div>
-        <div class="card-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus sunt odit veritatis voluptatem recusandae porro delectus expedita at ea blanditiis ab animi cum illo nobis, hic nisi accusamus fugiat aliquam?
-        </div>
-        
-      </article>
+          <div class="card-header">Keraudren Johan</div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ex
+            id ipsa, ab quos enim quo voluptate ipsum quidem sint provident,
+            eveniet similique maxime ratione tempore temporibus, nihil dolores
+            nostrum!
+          </div>
+        </article>
         <aside>
-          <img src="../public/9f973a6f6620605c2deabf2573795dfd.jpg" alt="Image de Keraudren Johan" width="240px" height="240px" />
-          
-          <button class="bouton">
-          En savoir plus...
-          </button>
+          <img
+            src="../public/johan.jpg"
+            alt="Image de Keraudren Johan"
+            width="240px"
+            height="240px"
+          />
+
+          <a href="aboutme.html"
+            ><button class="bouton">En savoir plus...</button></a
+          >
         </aside>
       </section>
 
       <!-- Section projet \ Competences contact -->
       <div class="container">
-        
         <div class="card">
-          <div class="card-title">
-            <h2> Mes projets</h2>
-          </div>
-        </div>
-        
-        <div class="card comp">
-          <div class="card-header">
-            Mes compétences
-          </div>
-          <div class="card-body comp-container">
-            
-            <div class="comp-list comp-n1">
-              <strong>Réalisation</strong><br>
-              test
-                <a href="./Competences/1.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-                  stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 7h10v10"/>
-                    <path d="M7 17 17 7"/>
+          <div class="card-title">Mes projets</div>
+          <div class="proj-container">
+            <!--Snake-->
+            <a href="./projet.html">
+              <div class="card-picture">
+                <div class="card-picture-img">
+                  <img src="../public/snake.png" alt="Image snake"/
+                  max-width="100em" max-height="100%"/>
+                </div>
+                <div class="card-picture-name">Algorithmie</div>
+                <div class="card-picture-desc">
+                  Réalisation de différents algorithmie de programmation en C<br />
+                  Création d'un jeu snake.
+                </div>
+                <div class="card-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
                   </svg>
-                </a>
-            </div>
-            <div class="comp-list comp-n2">
-              <strong>Optimisation</strong>
-              <br>
-                <a href="./Competences/2.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-                      stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M7 7h10v10"/> <path d="M7 17 17 7"/>
+                </div>
+              </div>
+            </a>
+            <!--Docker-->
+            <a href="./projet.html">
+              <div class="card-picture">
+                <div class="card-picture-img">
+                  <img src="../public/Docker.png" alt="Image snake"/
+                  max-width="100em" max-height="100%"/>
+                </div>
+                <div class="card-picture-name">Vitrtualisation</div>
+                <div class="card-picture-desc">
+                  Initiation à la vitrtualisation avec Docker et des scripts
+                  Bash
+                  <br />
+                  Réaliser dans un groupe de 4
+                </div>
+                <div class="card-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
                   </svg>
-                </a>
-            </div>
-            <div class="comp-list comp-n3">
-              <strong>lorem</strong><br>
-              <a href="./Competences/3.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-                  stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M7 7h10v10"/><path d="M7 17 17 7"/>
-                </svg>
+                </div>
+              </div>
             </a>
-            </div>
-            <div class="comp-list comp-n4">
-              <strong>Administrer</strong><br>
-              <a href="./Competences/4.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M7 7h10v10"/><path d="M7 17 17 7"/>
-          </svg>
+            <!--Projet 3-->
+            <a href="./projet.html">
+              <div class="card-picture">
+                <div class="card-picture-img">
+                  <img src="../public/htmlcss.jpg" alt="Image Web"/
+                  max-width="100em" max-height="100%"/>
+                </div>
+                <div class="card-picture-name">Developpement Web</div>
+                <div class="card-picture-desc">
+                  Réalisation de différents projets de développement web en
+                  HTML, CSS.
+                </div>
+                <div class="card-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                </div>
+              </div>
             </a>
-            </div>
-            <div class="comp-list comp-n5">
-              <strong>Besoins</strong><br>
-              <a href="./Competences/5.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-              stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 7h10v10"/><path d="M7 17 17 7"/>
-            </svg>
+            <!--Projet 4-->
+            <a href="./projet.html">
+              <div class="card-picture">
+                <div class="card-picture-img">
+                  <img src="../public/BDD.png" alt="Image snake"/
+                  max-width="100em" max-height="100%"/>
+                </div>
+                <div class="card-picture-name">Modélisation BDD</div>
+                <div class="card-picture-desc">
+                  Modélisation d'une base de données relationnelle en Tutorial D
+                  & PostgreSQL
+                </div>
+                <div class="card-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                </div>
+              </div>
             </a>
-            </div>
-            <div class="comp-list comp-n6">
-              <strong>Equipe</strong><br>
-              <a href="./Competences/6.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-              stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            <!--Projet 5-->
+            <a href="./projet.html">
+              <div class="card-picture">
+                <div class="card-picture-img">
+                  <img src="../public/teamwork.png" alt="Image snake"/
+                  max-width="100em" max-height="100%"/>
+                </div>
+                <div class="card-picture-name">Gestion d'équipe & projet</div>
+                <div class="card-picture-desc">
+                  Gestion d'un projet, de l'ouverture à la clotûre
+                  <strong>-</strong><br />
+                  Mise en place d'une activité de Teamworking.
+                </div>
+                <div class="card-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                </div>
+              </div>
             </a>
-            </div>
           </div>
         </div>
-        
-        <div class="card">
-          <div class="card-header">
-            Contact
-            </div>
-            <div class="card-body">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorum nulla asperiores natus unde temporibus! Quas minima nisi eius cumque officia doloribus? Incidunt, cum. Commodi totam rerum fuga molestiae tenetur.
-            </div>
-        </div>
-             
-            
-                
 
-          
+        <div class="card">
+          <div class="card-title">Compétences IUT</div>
+          <div class="card-body comp-container">
+            <a href="./Competences/1.html">
+              <div class="comp-list comp-n1">
+                <strong>Réaliser</strong><br />
+                <div class="comp-list-desc">
+                  Concevoir, réaliser et mettre en œuvre une application
+                  informatique
+                </div>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </div>
+            </a>
+            <a href="./Competences/2.html">
+              <div class="comp-list comp-n2">
+                <strong>Optimiser</strong>
+                <br />
+                <div class="comp-list-desc">
+                  Proposer des applications informatiques optimisées en fonction
+                  de critères spécifiques : temps d’exécution, précision,
+                  consommation de ressources..
+                </div>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </div>
+            </a>
+            <a href="./Competences/3.html">
+              <div class="comp-list comp-n3">
+                <strong>Administrer</strong><br />
+                <div class="comp-list-desc">
+                  Installer, configurer et administrer un système
+                  d’exploitation, un réseau, un serveur de communication et de
+                  stockage
+                </div>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </div>
+            </a>
+            <a href="./Competences/4.html">
+              <div class="comp-list comp-n4">
+                <strong>Gérer</strong><br />
+                <div class="comp-list-desc">
+                  Concevoir, gérer, administrer et exploiter les données et
+                  mettre à dispositiontoutes les informations pour un bon
+                  pilotage de l’entreprise
+                </div>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </div>
+            </a>
+            <a href="./Competences/4.html">
+              <div class="comp-list comp-n5">
+                <strong>Conduire</strong><br />
+                <div class="comp-list-desc">
+                  Concevoir, réaliser et mettre en œuvre un projet informatique
+                  en respectant les délais, le budget et la qualité
+                </div>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </div>
+            </a>
+            <a href="./Competences/5.html">
+              <div class="comp-list comp-n6">
+                <strong>Collaborer</strong><br />
+                <div class="comp-list-desc">
+                  Travailler en équipe, communiquer et collaborer avec les
+                  différents acteurs du projet
+                </div>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Contact</div>
+          <div class="card-body contact-grid">
+            <div class="contact">
+              <a href="https://github.com/Shalamin">
+                <div class="contact-logo">
+                  <img src="../public/icons/ico_git.jpg" />
+                  <img src="../public/logo/github.png" />
+                </div>
+                <span class="contact-account">
+                  <div class="account-name">Shalamin</div>
+                  <div class="account-link">https://github.com/Shalamin</div>
+                </span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </a>
+            </div>
+            <div class="contact">
+              <a href="https://www.linkedin.com/in/johan-keraudren-16395b258/">
+                <div class="contact-logo">
+                  <img src="../public/johan.jpg" />
+                  <img src="../public/logo/linkedin.png" />
+                </div>
+                <span class="contact-account">
+                  <div class="account-name">Keraudren Johan</div>
+                  <div class="account-link">
+                    https://www.linkedin.com/in/jkeraudren/
+                  </div>
+                </span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </a>
+            </div>
+            <div class="contact">
+              <a href="mailto:johankeraudren1@gmail.com">
+                <div class="contact-logo">
+                  <img src="../public/johan2.png" />
+                  <img src="../public/logo/gmail.png" />
+                </div>
+                <span class="contact-account">
+                  <div class="account-name">Keraudren Johan</div>
+                  <div class="account-link">johankeraudren1@gmail.com</div>
+                </span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      
-     
-
-    
-        
-      
     </main>
     <footer>
-      <p>&copy; 2025 Keraudren Johan. Tous droits réservés.</p>
-      <p>Contact: <a href="./contact.html" >Keraudren Johan</a></p>
+      <div class="ft-credit">
+        <div class="ft-credit-title">KERAUDREN Johan - 2025</div>
+        <div class="ft-credit-body">
+          Étudiant en 1<sup>ère</sup> année de BUT Informatique <br />IUT de
+          Lannion
+        </div>
+      </div>
+      <div class="ft-contact">
+        <div class="ft-contact-title">Plus d'informations</div>
+        <div class="ft-contact-body">
+          <div><strong>Téléphone</strong> : +33 (0)6 66 69 38 01</div>
+          <div><strong>Mail</strong> : johankeraudren1@gmail.com</div>
+          <div class="ft-contact-link">
+            <a href="https://github.com/Shalamin"
+              ><img src="../public/logo/github.png"
+            /></a>
+            <a href="https://www.linkedin.com/in/jkeraudren/"
+              ><img src="../public/logo/linkedin.png"
+            /></a>
+            <a href="https://www.instagram.com/johan.kdn/"
+              ><img src="../public/instagram.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
