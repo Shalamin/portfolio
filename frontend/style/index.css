@@ -1,4 +1,4 @@
-@import url("./root.css");
+@import url("./root-j.css");
 
 body {
   background-color: var(--background);
@@ -44,7 +44,7 @@ main {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 80%;
   row-gap: 2rem;
 }
 main section {
@@ -150,7 +150,7 @@ main aside img {
   display: grid;
   justify-items: center;
   gap: 1rem;
-  grid-template-rows: 3fr;
+  grid-template-rows: 1fr;
 }
 
 .ft-credit,

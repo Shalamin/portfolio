@@ -32,6 +32,7 @@
   box-shadow: 2px 2px 1.5px rgba(0, 0, 0, 0.7);
   background-image: var(--diagonal);
 }
+
 .card:nth-child(1),
 .card:nth-child(5) {
   background-image: var(--diagonal-oppose);
@@ -77,7 +78,7 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 0.75rem;
-  min-height: 0.5rem;
+  min-height: 10%;
   min-width: 15rem;
   width: 100%;
   display: flex;
@@ -86,7 +87,7 @@
   align-items: center;
 }
 .contact a:hover {
-  background-color: var(--muted);
+  background-color: var(--input);
 }
 .contact a > svg {
   position: absolute;
@@ -129,8 +130,8 @@
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
 }
 
 .project-card {
@@ -140,15 +141,17 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
+  min-height: 300px;
 }
 
-.project-card h3 {
-  margin-top: 0;
+.project-card .card-body {
+  flex: 1;
 }
 
 .project-card a {
   margin-top: 1rem;
+
   text-align: center;
   display: inline-block;
   background: var(--primary);
@@ -163,4 +166,58 @@
 .project-card a:hover {
   background: var(--input);
   color: var(--accent-foreground);
+}
+.card-subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--muted-foreground);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.card-subtitle span {
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-subtitle div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card-subtitle .r1,
+.card-subtitle .r2,
+.card-subtitle .r3,
+.card-subtitle .r4,
+.card-subtitle .r5,
+.card-subtitle .r6 {
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+}
+.card-subtitle .r1 {
+  border: 1px solid var(--comp1);
+}
+.card-subtitle .r2 {
+  border: 1px solid var(--comp2);
+}
+.card-subtitle .r3 {
+  border: 1px solid var(--comp3);
+}
+.card-subtitle .r4 {
+  border: 1px solid var(--comp4);
+}
+.card-subtitle .r5 {
+  border: 1px solid var(--comp5);
+}
+.card-subtitle .r6 {
+  border: 1px solid var(--comp6);
 }
