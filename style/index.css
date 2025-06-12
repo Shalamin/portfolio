@@ -139,8 +139,8 @@ main aside img {
   scale: 1.5;
   transition: all 0.2s ease-in-out;
 }
-.comp-list a,
-.card-link a,
+.comp-list svg,
+.card-link svg,
 .contact a > svg {
   text-decoration: none;
   color: var(--destructive);
